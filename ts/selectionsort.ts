@@ -14,7 +14,7 @@ function findSmallestTS<T> (arr:T[]):number {
     let newArr:T[]=[]
     if (!arr.length) return [];
     while (arr.length>0) {
-      let smallest:number=findSmallest(arr)
+      let smallest:number=findSmallestTS(arr)
       newArr.push(arr.splice(smallest, 1)[0]);
     }
     return newArr;
