@@ -4,6 +4,13 @@ const sumArr =(array)=>{
     return array.reduce((prev, cur)=> {return  prev + cur});
   }
 
+//сумма рекурсивно
+
+const sumRecursive=(array)=> {
+  if (array.length == 0) return 0;
+  return array[0] + sumRecursive(array.slice(1));
+}
+
 //быстрая сортировка
 
 

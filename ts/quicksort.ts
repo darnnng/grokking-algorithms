@@ -4,8 +4,15 @@ const sumArrTS =(array:number[]):number=>{
     return array.reduce((prev:number, cur:number)=> {return  prev + cur});
   }
 
-//быстрая сортировка
+//сумма рекурсивно
 
+const sumRecursiveTS=(array:number[]):number=>{
+  if (array.length == 0) return 0;
+  return array[0] + sumRecursiveTS(array.slice(1));
+}
+
+  
+//быстрая сортировка
 
 const quicksortTS=(array:number[]):number[]=> {
 
