@@ -2,7 +2,7 @@ interface Graph<T> {
     [key:string]:T
 };
 
-const graph:Graph<number>  = {};
+const graph:Graph<number|object>  = {};
 graph["start"] = {};
 graph["start"]["a"] = 6;
 graph["start"]["b"] = 2;
